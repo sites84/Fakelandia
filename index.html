@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Fakelândia — investigações sobre fakes, hoaxes, manipulações e conteúdos fora de contexto da internet.">
+  <title>Fakelândia — A internet nem sempre é o que parece</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="./">FAKELÂNDIA</a>
+    <nav aria-label="Navegação principal">
+      <a href="#casos">Casos</a>
+      <a href="#categorias">Categorias</a>
+      <a href="#metodo">Como investigamos</a>
+      <a href="#enviar">Enviar caso</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <span class="eyebrow">ARQUIVO DE INVESTIGAÇÕES DA INTERNET</span>
+        <h1>Nem tudo que parece real<br><span>é real.</span></h1>
+        <p>O Fakelândia investiga fakes, hoaxes, imagens manipuladas, vídeos fora de contexto, deepfakes e histórias que a internet transformou em verdade.</p>
+        <div class="search-box">
+          <input id="search" type="search" placeholder="Pesquise por um caso, tema ou palavra-chave..." aria-label="Pesquisar casos">
+          <button id="searchButton">Pesquisar</button>
+        </div>
+      </div>
+      <div class="hero-stamp" aria-hidden="true"><span>INVESTIGADO</span><strong>F</strong><span>COM EVIDÊNCIAS</span></div>
+    </section>
+
+    <section id="casos" class="section">
+      <div class="section-heading"><div><span class="eyebrow">ARQUIVO</span><h2>Casos investigados</h2></div><span id="resultCount" class="muted"></span></div>
+      <div id="casesGrid" class="cases-grid"></div>
+      <p id="emptyState" class="empty hidden">Nenhum caso encontrado.</p>
+    </section>
+
+    <section id="categorias" class="section dark-section">
+      <span class="eyebrow">NAVEGUE PELO ARQUIVO</span><h2>Categorias</h2>
+      <div class="category-grid">
+        <button data-category="IA">🤖 Fakes de IA</button>
+        <button data-category="Vídeos">▶ Vídeos</button>
+        <button data-category="Imagens">▣ Imagens</button>
+        <button data-category="Hoaxes históricos">◷ Hoaxes históricos</button>
+        <button data-category="Fora de contexto">↻ Fora de contexto</button>
+        <button data-category="Áudios">◉ Áudios</button>
+      </div>
+    </section>
+
+    <section id="metodo" class="section method-section">
+      <span class="eyebrow">NOSSO PADRÃO</span><h2>Não basta dizer “é fake”.</h2>
+      <div class="method-grid">
+        <article><b>01</b><h3>Origem</h3><p>Localizamos onde e quando a alegação apareceu, procurando as versões mais antigas disponíveis.</p></article>
+        <article><b>02</b><h3>Propagação</h3><p>Reconstruímos como o conteúdo mudou, ganhou contexto falso e se espalhou.</p></article>
+        <article><b>03</b><h3>Evidências</h3><p>Comparamos fontes, versões, registros, imagens, vídeos e informações independentes.</p></article>
+        <article><b>04</b><h3>Fato real</h3><p>Quando existe um acontecimento real por trás do fake, reconstruímos o que de fato aconteceu.</p></article>
+      </div>
+    </section>
+
+    <section id="enviar" class="submit-section"><div><span class="eyebrow">ENCONTROU UM CASO?</span><h2>Mande para o arquivo.</h2><p>A área de envio será integrada ao projeto em uma próxima etapa.</p></div><button disabled>Enviar caso</button></section>
+  </main>
+
+  <footer><strong>FAKELÂNDIA</strong><span>Arquivo independente de investigações da internet.</span></footer>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
